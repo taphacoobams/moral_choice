@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hors ligne - MoralChoice</title>
+  <style>
+    body {
+      font-family: 'Cinzel', serif;
+      background-color: #1c1917;
+      color: #e5e5e5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    .container {
+      max-width: 600px;
+      padding: 2rem;
+      background-color: #292524;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      margin: 1rem;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #d1d5db;
+    }
+    p {
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #9333ea;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.375rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.2s;
+    }
+    .btn:hover {
+      background-color: #7e22ce;
+    }
+    .icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #9333ea;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="icon">⚠️</div>
+    <h1>Vous êtes hors ligne</h1>
+    <p>
+      Il semble que vous n'ayez pas de connexion internet.
+      MoralChoice nécessite une connexion pour charger les scénarios et sauvegarder vos choix.
+    </p>
+    <p>
+      Veuillez vérifier votre connexion et réessayer.
+    </p>
+    <a href="/" class="btn">Réessayer</a>
+  </div>
+</body>
+</html>

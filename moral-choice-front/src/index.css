@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Importation des polices Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap');
+
+@layer base {
+  body {
+    @apply bg-village-dark text-village-light min-h-screen;
+    /* Temporairement désactivé jusqu'à ce que nous ayons l'image */
+    /* background-image: url('./assets/village-texture.png'); */
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-medieval;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md transition-all duration-300 font-medium;
+  }
+  
+  .btn-primary {
+    @apply bg-sin-pride text-white hover:bg-opacity-80;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-700 text-white hover:bg-gray-600;
+  }
+  
+  .card {
+    @apply bg-gray-800 bg-opacity-80 rounded-lg p-6 shadow-lg border border-gray-700;
+  }
+  
+  .input {
+    @apply bg-gray-700 border border-gray-600 rounded-md px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-sin-pride;
+  }
+  
+  .moral-meter {
+    @apply h-4 rounded-full overflow-hidden bg-gray-700;
+  }
+  
+  .moral-meter-fill {
+    @apply h-full transition-all duration-500;
+  }
+  
+  .scenario-option {
+    @apply p-4 border border-gray-700 rounded-md hover:bg-gray-700 transition-colors cursor-pointer;
+  }
+}
+
+/* Animations personnalisées */
+@keyframes pulse-sin {
+  0%, 100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+.sin-pulse {
+  animation: pulse-sin 2s infinite;
+}
